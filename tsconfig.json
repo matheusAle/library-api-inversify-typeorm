@@ -1,0 +1,21 @@
+{
+  "ts-node": {
+    "transpileOnly": true,
+    "require": [
+      "typescript-transform-paths/register",
+      "tsconfig-paths/register"
+    ]
+  },
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": "./src/",
+    "outDir": "dist",
+    "module": "commonjs",
+    "types": ["node"],
+    "target": "es6",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["src"]
+}
